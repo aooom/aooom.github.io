@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ooml.ml/"/>
-  <updated>2017-09-15T14:29:39.374Z</updated>
+  <updated>2017-09-15T14:32:26.010Z</updated>
   <id>http://ooml.ml/</id>
   
   <author>
@@ -17,24 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>����ubuntu-16.04.3�hexo��������</title>
+    <title>最新ubuntu-16.04.3搭建hexo发布博客</title>
     <link href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
     <id>http://ooml.ml/2017/ubuntu-build-blog-hexo/</id>
-    <published>2017-09-15T08:07:35.000Z</published>
-    <updated>2017-09-15T14:29:39.374Z</updated>
+    <published>2017-09-15T08:07:36.000Z</published>
+    <updated>2017-09-15T14:32:26.010Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;һ��-׼���L���&quot;&gt;&lt;a href=&quot;#һ��-׼���L���&quot; class=&quot;headerlink&quot; title=&quot;һ�� ׼���Ĺ���&quot;&gt;&lt;/a&gt;һ�� ׼���Ĺ���&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;��װubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;����&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;�������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�&lt;/p&gt;
+      &lt;h1 id=&quot;一、-准备的工作&quot;&gt;&lt;a href=&quot;#一、-准备的工作&quot; class=&quot;headerlink&quot; title=&quot;一、 准备的工作&quot;&gt;&lt;/a&gt;一、 准备的工作&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;װ�ú�ִ����������&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;装好后执行下面代码&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
     
-      <category term="�̳�" scheme="http://ooml.ml/categories/%EF%BF%BD%CC%B3%EF%BF%BD/"/>
+      <category term="教程" scheme="http://ooml.ml/categories/%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
