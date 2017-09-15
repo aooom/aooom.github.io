@@ -66,7 +66,7 @@
   
     
     
-    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -85,7 +85,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="aooom‘s Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Aooom‘s Blog" type="application/atom+xml" />
 
 
 
@@ -102,7 +102,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Hexo搭建个人博客——进阶篇(从入门到入土)">
 <meta property="og:url" content="http://ooml.ml/2017/02/21/build-blog-hexo-advanced/index.html">
-<meta property="og:site_name" content="aooom‘s Blog">
+<meta property="og:site_name" content="Aooom‘s Blog">
 <meta property="og:description" content="前言好久没更新了，因为懒- -前面介绍了Hexo的一些基本搭建→基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。关于NexT主题的很多配置、插件都可以在官方文档找到答案，那么博主只是整理了一些">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/next.png">
@@ -158,7 +158,7 @@
 
 
 
-  <title>基于Hexo搭建个人博客——进阶篇(从入门到入土) | aooom‘s Blog</title>
+  <title>基于Hexo搭建个人博客——进阶篇(从入门到入土) | Aooom‘s Blog</title>
   
 
 
@@ -197,7 +197,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">aooom‘s Blog</span>
+        <span class="site-title">Aooom‘s Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -323,7 +323,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="aooom‘s Blog">
+      <meta itemprop="name" content="Aooom‘s Blog">
     </span>
 
     
@@ -441,7 +441,7 @@
 <p>再打开<code>themes/next/layout/_scripts/third-party/comments/disqus.swig</code>，需要替换原本的 Disqus 的加载的内容，如果希望显示评论数量，就保留 run_disqus_script(‘count.js’) 这一行，这样页面载入时还会加载 disqus 的资源：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="xml">run_disqus_script('count.js');</span></div><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> page.comments %&#125;</span><span class="xml"></span></div><div class="line"><span class="xml">  run_disqus_script('embed.js');</span></div><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></div></pre></td></tr></table></figure></p>
 <p>替换为下面的内容：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> disqus = &#123;</div><div class="line">  load : <span class="function"><span class="keyword">function</span> <span class="title">disqus</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      <span class="keyword">if</span>(<span class="keyword">typeof</span> DISQUS !== <span class="string">'object'</span>) &#123;</div><div class="line">        (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> s = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>); s.async = <span class="literal">true</span>;</div><div class="line">        s.type = <span class="string">'text/javascript'</span>;</div><div class="line">        s.src = <span class="string">'//'</span> + disqus_shortname + <span class="string">'.disqus.com/embed.js'</span>;</div><div class="line">        (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'HEAD'</span>)[<span class="number">0</span>] || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'BODY'</span>)[<span class="number">0</span>]).appendChild(s);</div><div class="line">        &#125;());</div><div class="line">        $(<span class="string">'#load-disqus'</span>).html(<span class="string">"评论加载中，请确保你有梯子，若评论长时间未加载则你可能翻墙失败..."</span>).fadeOut(<span class="number">9000</span>); <span class="comment">//加载后移除按钮</span></div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>前面的 <code>function run_disqus_script(disqus_script){}</code>这一段，不打算显示评论数量的话，可以一起删掉，不显示评论数量的话，那么点击加载按钮之前，网页是不会加载来自 Disqus 的资源的。</p>
-<h2 id="修改文章页宽"><a href="#修改文章页宽" class="headerlink" title="修改文章页宽"></a>修改文章页宽</h2><p>打开<code>themes/next/source/css/_variables/base.styl</code>，找到以下字段并修改为合适的宽度：<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta"><span class="meta-keyword">$content</span>-desktop-large = 1000px</span></div></pre></td></tr></table></figure></p>
+<h2 id="修改文章页宽"><a href="#修改文章页宽" class="headerlink" title="修改文章页宽"></a>修改文章页宽</h2><p>打开<code>themes/next/source/css/_variables/base.styl</code>，找到以下字段并修改为合适的宽度：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash">content-desktop-large = 1000px</span></div></pre></td></tr></table></figure></p>
 <h2 id="修改小型代码块颜色"><a href="#修改小型代码块颜色" class="headerlink" title="修改小型代码块颜色"></a>修改小型代码块颜色</h2><p>修改<code>\themes\next\source\css\ _variables\base.styl</code>文件，加入自定义颜色：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash">black-deep   = <span class="comment">#222</span></span></div><div class="line"><span class="meta">$</span><span class="bash">red          = <span class="comment">#ff2a2a</span></span></div><div class="line"><span class="meta">$</span><span class="bash">blue-bright  = <span class="comment">#87daff</span></span></div><div class="line"><span class="meta">$</span><span class="bash">blue         = <span class="comment">#0684bd</span></span></div><div class="line"><span class="meta">$</span><span class="bash">blue-deep    = <span class="comment">#262a30</span></span></div><div class="line"><span class="meta">$</span><span class="bash">orange       = <span class="comment">#fc6423</span></span></div><div class="line">// 下面是我自定义的颜色</div><div class="line"><span class="meta">$</span><span class="bash">my-code-foreground = <span class="comment">#dd0055  // 用``围出的代码块字体颜色</span></span></div><div class="line"><span class="meta">$</span><span class="bash">my-code-background = <span class="comment">#eee  // 用``围出的代码块背景颜色</span></span></div></pre></td></tr></table></figure></p>
 <p>修改<code>$code-background</code>和<code>$code-foreground</code>的值：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// Code &amp; Code Blocks // 用``围出的代码块 // -------------------------------------------------- </div><div class="line"><span class="meta">$</span><span class="bash">code-font-family               = <span class="variable">$font</span>-family-monospace </span></div><div class="line"><span class="meta">$</span><span class="bash">code-font-size                 = 15px </span></div><div class="line"><span class="meta">$</span><span class="bash">code-background                = <span class="variable">$my</span>-code-background </span></div><div class="line"><span class="meta">$</span><span class="bash">code-foreground                = <span class="variable">$my</span>-code-foreground </span></div><div class="line"><span class="meta">$</span><span class="bash">code-border-radius             = 4px</span></div></pre></td></tr></table></figure></p>
 <h2 id="文章末尾追加版权信息"><a href="#文章末尾追加版权信息" class="headerlink" title="文章末尾追加版权信息"></a>文章末尾追加版权信息</h2><p>找到<code>themes/next/layout/_macro/post.swig</code>，在<code>footer</code>之前添加如下代码(添加之前确保已添加<strong><em><a href="#%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%A0%B7%E5%BC%8F">样式</a></em></strong>)：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line"><span class="xml">	    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"div-border-left-red"</span>&gt;</span></span></div><div class="line"><span class="xml">	   <span class="tag">&lt;<span class="name">b</span>&gt;</span>本文基于<span class="tag">&lt;<span class="name">a</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">title</span>=<span class="string">"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"</span> <span class="attr">href</span>=<span class="string">"http://creativecommons.org/licenses/by-sa/4.0/"</span>&gt;</span> 知识共享署名-相同方式共享 4.0 <span class="tag">&lt;/<span class="name">a</span>&gt;</span>国际许可协议发布<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span></div><div class="line"><span class="xml">	    <span class="tag">&lt;<span class="name">span</span>&gt;</span></span></div><div class="line"><span class="xml">	    <span class="tag">&lt;<span class="name">b</span>&gt;</span>本文地址：<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(page.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">title</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; page.title &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span><span class="template-variable">&#123;&#123; page.permalink &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>转载请注明出处，谢谢！<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span></div><div class="line"><span class="xml">	    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></div><div class="line"><span class="xml">	    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
@@ -663,8 +663,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/11/fist/" rel="prev" title="post">
-                post <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/21/ubuntu-build-blog-hexo/" rel="prev" title="����ubuntu-16.04.3�hexo��������">
+                ����ubuntu-16.04.3�hexo�������� <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -745,7 +745,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -756,7 +756,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -861,7 +861,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      11.2k
+      11.5k
     </span>
   
 </div>

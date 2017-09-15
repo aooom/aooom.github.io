@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>aooom‘s Blog</title>
+  <title>Aooom‘s Blog</title>
   
   <subtitle>Sow nothing, reap nothing.</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -32,6 +32,39 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>����ubuntu-16.04.3�hexo��������</title>
+    <link href="http://ooml.ml/2017/02/21/ubuntu-build-blog-hexo/"/>
+    <id>http://ooml.ml/2017/02/21/ubuntu-build-blog-hexo/</id>
+    <published>2017-02-21T15:07:35.000Z</published>
+    <updated>2017-09-15T13:28:28.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;һ��-׼���L���&quot;&gt;&lt;a href=&quot;#һ��-׼���L���&quot; class=&quot;headerlink&quot; title=&quot;һ�� ׼���Ĺ���&quot;&gt;&lt;/a&gt;һ�� ׼���Ĺ���&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;��װubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;����&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;�������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;װ�ú�ִ����������&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="�̳�" scheme="http://ooml.ml/categories/%EF%BF%BD%CC%B3%EF%BF%BD/"/>
+    
+    
+      <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
+    
+      <category term="Node.js" scheme="http://ooml.ml/tags/Node-js/"/>
+    
+      <category term="Github" scheme="http://ooml.ml/tags/Github/"/>
+    
+      <category term="Coding" scheme="http://ooml.ml/tags/Coding/"/>
+    
+      <category term="Git" scheme="http://ooml.ml/tags/Git/"/>
     
   </entry>
   
