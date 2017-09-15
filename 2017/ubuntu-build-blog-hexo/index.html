@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo,Node.js,Github,Coding,Git," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Aooom‘s Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="һ�� ׼���Ĺ��� ��װubuntu-16.04.3 �����������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�  װ�ú�ִ����������">
+<meta name="keywords" content="Hexo,Node.js,Github,Coding,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="����ubuntu-16.04.3�hexo��������">
+<meta property="og:url" content="http://ooml.ml/2017/ubuntu-build-blog-hexo/index.html">
+<meta property="og:site_name" content="Aooom‘s Blog">
+<meta property="og:description" content="һ�� ׼���Ĺ��� ��װubuntu-16.04.3 �����������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�  װ�ú�ִ����������">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-15T14:17:03.943Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="����ubuntu-16.04.3�hexo��������">
+<meta name="twitter:description" content="һ�� ׼���Ĺ��� ��װubuntu-16.04.3 �����������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�  װ�ú�ִ����������">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
+
+
+
+
+
+  <title>����ubuntu-16.04.3�hexo�������� | Aooom‘s Blog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-106347970-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Aooom‘s Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Sow nothing, reap nothing.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ooml.ml/2017/ubuntu-build-blog-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aooom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aooom‘s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">����ubuntu-16.04.3�hexo��������</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-15T16:07:34+08:00">
+                2017-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/�̳�/" itemprop="url" rel="index">
+                    <span itemprop="name">�̳�</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  362
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="һ��-׼���L���"><a href="#һ��-׼���L���" class="headerlink" title="һ�� ׼���Ĺ���"></a>һ�� ׼���Ĺ���</h1><ol>
+<li><p>��װubuntu-16.04.3 <strong><em><a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso" target="_blank" rel="external">����</a></em></strong>�������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�</p>
+</li>
+<li><p>װ�ú�ִ����������</p>
+</li>
+</ol>
+<a id="more"></a>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="builtin-name">get</span> update</div><div class="line">sudo apt-<span class="builtin-name">get</span> upgrade</div></pre></td></tr></table></figure>
+<ol>
+<li>��װNode.js<figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt <span class="keyword">install</span> nodejs-legacy</div><div class="line">sudo apt <span class="keyword">install</span> npm</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>�鿴 node �汾���Ƿ�װ��<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">node</span> <span class="title">-v</span></div></pre></td></tr></table></figure></p>
+<ol>
+<li>NPM�����Ա�Դ��<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo <span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>��������Nodejs���������°棺<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo cnpm install -g <span class="built_in">n</span></div><div class="line">sudo <span class="built_in">n</span> stable</div></pre></td></tr></table></figure></p>
+<p>����NodeJs����������<br><code>sudo gedit /etc/profile</code><br>�ڴ򿪵��ļ��������������£�<br>export NODE_HOME=/usr/local/n/versions/node/8.2.1<br>export PATH=$PATH:$NODE_HOME/bin<br>export NODE_PATH=$NODE_HOME/lib/node_modules</p>
+<ol>
+<li>��װgit<br>�鿴 git �汾<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="comment">--version</span></div><div class="line">sudo apt-<span class="keyword">get</span> install git</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>����SSH Key<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">ssh-keygen</span> <span class="selector-tag">-t</span> <span class="selector-tag">rsa</span> <span class="selector-tag">-C</span> <span class="selector-tag">youmail</span>@<span class="keyword">gmail</span>.<span class="keyword">com</span></div></pre></td></tr></table></figure></p>
+<p>���Ƿ����ӵ���<br><code>ssh -T git@github.com</code></p>
+<h1 id="����-��װhexo"><a href="#����-��װhexo" class="headerlink" title="���� ��װhexo"></a>���� ��װhexo</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo npm <span class="keyword">cache</span> clean</div><div class="line">sudo cnpm <span class="keyword">install</span> hexo-cli -g</div><div class="line">sudo cnpm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure>
+<p>��ʼ�������ļ���<br>git clone <a href="https://github.com/aooom/aooom.github.io.git" target="_blank" rel="external">https://github.com/aooom/aooom.github.io.git</a><br>hexo init blog</p>
+<h1 id="�л�����·��"><a href="#�л�����·��" class="headerlink" title="�л�����·��"></a>�л�����·��</h1><p>cd blog</p>
+<h1 id="��װhexo����չ����"><a href="#��װhexo����չ����" class="headerlink" title="��װhexo����չ����"></a>��װhexo����չ����</h1><p>��gedit����package.json���������г��Ĳ����Ͳ���װ</p>
+<h1 id="��װ��������"><a href="#��װ��������" class="headerlink" title="��װ��������"></a>��װ��������</h1><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#cnpm install hexo-server --<span class="keyword">save</span></div><div class="line">#sudo cnpm install hexo-admin --<span class="keyword">save</span></div><div class="line">#sudo cnpm install hexo-generator-archive --<span class="keyword">save</span></div><div class="line">sudo cnpm install hexo-generator-feed --<span class="keyword">save</span></div><div class="line">sudo cnpm install hexo-generator-<span class="keyword">search</span> --<span class="keyword">save</span></div><div class="line">#sudo cnpm install hexo-generator-tag --<span class="keyword">save</span></div><div class="line">sudo cnpm install hexo-deployer-git --<span class="keyword">save</span></div><div class="line">sudo cnpm install hexo-generator-sitemap --<span class="keyword">save</span></div><div class="line">sudo cnpm install hexo-wordcount@2 --<span class="keyword">save</span></div></pre></td></tr></table></figure>
+<p>������<br><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+<h2 id="����html"><a href="#����html" class="headerlink" title="����html"></a>����html</h2><p><code>hexo g</code> �� <code>hexo generate</code></p>
+<h2 id="�������ط�����"><a href="#�������ط�����" class="headerlink" title="�������ط�����"></a>�������ط�����</h2><p><code>hexo s</code> �� <code>hexo server</code></p>
+<h2 id="��һ��֮���Ϳ���ͨ��http-localhost-4000-�鿴��"><a href="#��һ��֮���Ϳ���ͨ��http-localhost-4000-�鿴��" class="headerlink" title="��һ��֮���Ϳ���ͨ��http://localhost:4000  �鿴��"></a>��һ��֮���Ϳ���ͨ��<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>  �鿴��</h2><p>���⣺Ϊʲô����<a href="http://localhost:4000/���޷�Ӧ��" target="_blank" rel="external">http://localhost:4000/���޷�Ӧ��</a><br>�������������������ڶ˿����������ġ�ʹ��Ctrl+C�жϱ��ط�����ʹ������hexo s -p 5000���¿������ط��񣬷���<a href="http://localhost:5000/���Կ�������ҳ����" target="_blank" rel="external">http://localhost:5000/���Կ�������ҳ����</a></p>
+<p>��hexo���Ͳ�����github��</p>
+<h2 id="�޸������l�blog-config-yml���޸�deploy�������ݣ�������ʾ��"><a href="#�޸������l�blog-config-yml���޸�deploy�������ݣ�������ʾ��" class="headerlink" title="�޸������ļ�blog/_config.yml���޸�deploy�������ݣ�������ʾ��"></a>�޸������ļ�<code>blog/_config.yml���޸�deploy</code>�������ݣ�������ʾ��</h2><h1 id="Deployment-ע��"><a href="#Deployment-ע��" class="headerlink" title="Deployment ע��"></a>Deployment ע��</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># ����</div><div class="line">type: git</div><div class="line"># �ֿ�</div><div class="line">repo: git@github.com:xuezhisd/xuezhisd.github.io.git</div><div class="line"># ��֧</div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<p>ע�⣺type: git�е�ð�ź����ɿո���<br>ע�⣺��git@github.com:xuezhisd/xuezhisd.github.io.git�е��û��������Լ����û���git@github.com:github_username/github_username.github.io.git��</p>
+<p>#������git��</p>
+<h1 id="���վ�̬ҳ��"><a href="#���վ�̬ҳ��" class="headerlink" title="���վ�̬ҳ��"></a>���վ�̬ҳ��</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo clean</span></div></pre></td></tr></table></figure>
+<h1 id="���ɾ�̬ҳ��"><a href="#���ɾ�̬ҳ��" class="headerlink" title="���ɾ�̬ҳ��"></a>���ɾ�̬ҳ��</h1><figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+<h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo deploy</span></div></pre></td></tr></table></figure>
+<p>#���ɲ�������<br><code>hexo generate -d</code> ������<code>hexo g -d</code>��</p>
+<p>#����ҳ�棺<br><code>hexo new post &quot;�������֣����������ģ�</code></p>
+<p>#hexo��������</p>
+<h2 id="���������ɡ�����"><a href="#���������ɡ�����" class="headerlink" title="���������ɡ�����"></a>���������ɡ�����</h2><figure class="highlight plain"><figcaption><span>clean && hexo g -s</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">## ���������ɡ�����</div></pre></td></tr></table></figure>
+<p>hexo clean &amp;&amp; hexo g -d<br>```</p>
+<p>#��������</p>
+<p>hexo deployû�з�Ӧ��</p>
+<p>�޸������ļ���_config.ymlʱ��ð�ź���û�ӿո���<br>hexo s ��վ�򲻿���</p>
+<p>�˿�ռ�ã������˿ھͺ��ˡ�ִ������<code>hexo s -p 5000</code>��������������ַ������<a href="http://localhost:5000���س����ʡ�" target="_blank" rel="external">http://localhost:5000���س����ʡ�</a><br>���λ����⣿</p>
+<p>���������غ󣬷ŵ�themes�ļ����м��ɡ����磬�������װnext���⣺git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next��<br>�ο�����</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+            <a href="/tags/Github/" rel="tag"># Github</a>
+          
+            <a href="/tags/Coding/" rel="tag"># Coding</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/build-blog-hexo-advanced/" rel="next" title="基于Hexo搭建个人博客——进阶篇(从入门到入土)">
+                <i class="fa fa-chevron-left"></i> 基于Hexo搭建个人博客——进阶篇(从入门到入土)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.gif"
+              alt="aooom" />
+          
+            <p class="site-author-name" itemprop="name">aooom</p>
+            <p class="site-description motion-element" itemprop="description">修仙 | 看宝 | 吃货</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/aooom" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:tnheart@gmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#һ��-׼���L���"><span class="nav-number">1.</span> <span class="nav-text">һ�� ׼���Ĺ���</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#����-��װhexo"><span class="nav-number">2.</span> <span class="nav-text">���� ��װhexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#�л�����·��"><span class="nav-number">3.</span> <span class="nav-text">�л�����·��</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#��װhexo����չ����"><span class="nav-number">4.</span> <span class="nav-text">��װhexo����չ����</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#��װ��������"><span class="nav-number">5.</span> <span class="nav-text">��װ��������</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#����html"><span class="nav-number">5.1.</span> <span class="nav-text">����html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#�������ط�����"><span class="nav-number">5.2.</span> <span class="nav-text">�������ط�����</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#��һ��֮���Ϳ���ͨ��http-localhost-4000-�鿴��"><span class="nav-number">5.3.</span> <span class="nav-text">��һ��֮���Ϳ���ͨ��http://localhost:4000  �鿴��</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#�޸������l�blog-config-yml���޸�deploy�������ݣ�������ʾ��"><span class="nav-number">5.4.</span> <span class="nav-text">�޸������ļ�blog/_config.yml���޸�deploy�������ݣ�������ʾ��</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Deployment-ע��"><span class="nav-number">6.</span> <span class="nav-text">Deployment ע��</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docs-https-hexo-io-docs-deployment-html"><span class="nav-number">6.1.</span> <span class="nav-text">Docs: https://hexo.io/docs/deployment.html</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#���վ�̬ҳ��"><span class="nav-number">7.</span> <span class="nav-text">���վ�̬ҳ��</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#���ɾ�̬ҳ��"><span class="nav-number">8.</span> <span class="nav-text">���ɾ�̬ҳ��</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#����"><span class="nav-number">9.</span> <span class="nav-text">����</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#���������ɡ�����"><span class="nav-number">9.1.</span> <span class="nav-text">���������ɡ�����</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">aooom</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">
+      11.4k
+    </span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+<script type="text/javascript"
+color="255,0,204" opacity='0.7' zIndex="-2" count="80" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+
+
+</body>
+</html>

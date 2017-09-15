@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ooml.ml/"/>
-  <updated>2017-09-15T13:33:47.774Z</updated>
+  <updated>2017-09-15T14:17:03.943Z</updated>
   <id>http://ooml.ml/</id>
   
   <author>
@@ -17,24 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>最新ubuntu-16.04.3搭建hexo发布博客</title>
-    <link href="http://ooml.ml/2017/09/15/ubuntu-build-blog-hexo/"/>
-    <id>http://ooml.ml/2017/09/15/ubuntu-build-blog-hexo/</id>
+    <title>����ubuntu-16.04.3�hexo��������</title>
+    <link href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
+    <id>http://ooml.ml/2017/ubuntu-build-blog-hexo/</id>
     <published>2017-09-15T08:07:34.000Z</published>
-    <updated>2017-09-15T13:33:47.774Z</updated>
+    <updated>2017-09-15T14:17:03.943Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一、-准备的工作&quot;&gt;&lt;a href=&quot;#一、-准备的工作&quot; class=&quot;headerlink&quot; title=&quot;一、 准备的工作&quot;&gt;&lt;/a&gt;一、 准备的工作&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;/p&gt;
+      &lt;h1 id=&quot;һ��-׼���L���&quot;&gt;&lt;a href=&quot;#һ��-׼���L���&quot; class=&quot;headerlink&quot; title=&quot;һ�� ׼���Ĺ���&quot;&gt;&lt;/a&gt;һ�� ׼���Ĺ���&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;��װubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;����&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;�������������ߵ�����װ�����ԣ�һ·��һ������ûɶ�Ѷȡ�&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;装好后执行下面代码&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;װ�ú�ִ����������&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
     
-      <category term="教程" scheme="http://ooml.ml/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="�̳�" scheme="http://ooml.ml/categories/%EF%BF%BD%CC%B3%EF%BF%BD/"/>
     
     
       <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
@@ -50,35 +50,16 @@
   </entry>
   
   <entry>
-    <title>post</title>
-    <link href="http://ooml.ml/2017/09/11/fist/"/>
-    <id>http://ooml.ml/2017/09/11/fist/</id>
-    <published>2017-09-11T06:42:52.000Z</published>
-    <updated>2017-09-13T14:50:20.814Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;sudo apt-get update&lt;br&gt;1.安装Node.js&lt;br&gt;查看 node 版本&lt;br&gt;node -v&lt;br&gt;sudo apt-get install nodejs&lt;br&gt;node -v&lt;br&gt;程序“node”尚未安装。 您可以使用以下命令安装：&lt;br&gt;su
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>基于Hexo搭建个人博客——进阶篇(从入门到入土)</title>
-    <link href="http://ooml.ml/2017/02/21/build-blog-hexo-advanced/"/>
-    <id>http://ooml.ml/2017/02/21/build-blog-hexo-advanced/</id>
-    <published>2017-02-21T15:07:34.000Z</published>
-    <updated>2017-09-13T14:50:16.573Z</updated>
+    <link href="http://ooml.ml/2017/build-blog-hexo-advanced/"/>
+    <id>http://ooml.ml/2017/build-blog-hexo-advanced/</id>
+    <published>2017-09-11T15:07:34.000Z</published>
+    <updated>2017-09-15T14:20:19.589Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://ojoba1c98.bkt.clouddn.com/img/build-hexo/next.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没更新了，因为懒- -&lt;br&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ookamiantd.top/2017/build-blog-hexo-base/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;theme-next.iissnan.com/getting-started.html&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没更新了，因为懒- -&lt;br&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ooml.ml/2017/build-blog-hexo-base/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;theme-next.iissnan.com/getting-started.html&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
     
     </summary>
     
@@ -99,10 +80,10 @@
   
   <entry>
     <title>基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)</title>
-    <link href="http://ooml.ml/2017/01/15/build-blog-hexo-base/"/>
-    <id>http://ooml.ml/2017/01/15/build-blog-hexo-base/</id>
-    <published>2017-01-15T12:44:05.000Z</published>
-    <updated>2017-09-10T06:44:57.000Z</updated>
+    <link href="http://ooml.ml/2017/build-blog-hexo-base/"/>
+    <id>http://ooml.ml/2017/build-blog-hexo-base/</id>
+    <published>2017-09-10T12:44:05.000Z</published>
+    <updated>2017-09-15T14:18:32.121Z</updated>
     
     <summary type="html">
     
@@ -128,17 +109,15 @@
   
   <entry>
     <title>Start My Blog Trip -- Power By Hexo</title>
-    <link href="http://ooml.ml/2017/01/10/hello-world/"/>
-    <id>http://ooml.ml/2017/01/10/hello-world/</id>
+    <link href="http://ooml.ml/2017/hello-world/"/>
+    <id>http://ooml.ml/2017/hello-world/</id>
     <published>2017-01-10T15:49:28.000Z</published>
-    <updated>2017-09-14T14:23:44.596Z</updated>
+    <updated>2017-09-15T14:17:03.943Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
     
     </summary>
     
