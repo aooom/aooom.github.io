@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ooml.ml/"/>
-  <updated>2017-09-15T14:32:26.010Z</updated>
+  <updated>2017-09-17T13:10:49.124Z</updated>
   <id>http://ooml.ml/</id>
   
   <author>
@@ -17,49 +17,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>最新ubuntu-16.04.3搭建hexo发布博客</title>
-    <link href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
-    <id>http://ooml.ml/2017/ubuntu-build-blog-hexo/</id>
-    <published>2017-09-15T08:07:36.000Z</published>
-    <updated>2017-09-15T14:32:26.010Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一、-准备的工作&quot;&gt;&lt;a href=&quot;#一、-准备的工作&quot; class=&quot;headerlink&quot; title=&quot;一、 准备的工作&quot;&gt;&lt;/a&gt;一、 准备的工作&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;装好后执行下面代码&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://ooml.ml/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
-    
-      <category term="Node.js" scheme="http://ooml.ml/tags/Node-js/"/>
-    
-      <category term="Github" scheme="http://ooml.ml/tags/Github/"/>
-    
-      <category term="Coding" scheme="http://ooml.ml/tags/Coding/"/>
-    
-      <category term="Git" scheme="http://ooml.ml/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基于Hexo搭建个人博客——进阶篇(从入门到入土)</title>
     <link href="http://ooml.ml/2017/build-blog-hexo-advanced/"/>
     <id>http://ooml.ml/2017/build-blog-hexo-advanced/</id>
-    <published>2017-09-11T15:07:34.000Z</published>
-    <updated>2017-09-15T14:20:19.589Z</updated>
+    <published>2017-09-16T15:07:34.000Z</published>
+    <updated>2017-09-17T13:10:49.124Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://ojoba1c98.bkt.clouddn.com/img/build-hexo/next.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没更新了，因为懒- -&lt;br&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ooml.ml/2017/build-blog-hexo-base/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;theme-next.iissnan.com/getting-started.html&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没更新了，因为懒- -&lt;br&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ooml.ml/2017/ubuntu-build-blog-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最新ubuntu-16.04.3搭建hexo发布博客&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;theme-next.iissnan.com/getting-started.html&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
     
     </summary>
     
@@ -79,20 +46,19 @@
   </entry>
   
   <entry>
-    <title>基于Hexo+github+coding搭建个人博客——基础篇(从菜鸟到放弃)</title>
-    <link href="http://ooml.ml/2017/build-blog-hexo-base/"/>
-    <id>http://ooml.ml/2017/build-blog-hexo-base/</id>
-    <published>2017-09-10T12:44:05.000Z</published>
-    <updated>2017-09-15T14:18:32.121Z</updated>
+    <title>最新ubuntu-16.04.3搭建hexo发布博客</title>
+    <link href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
+    <id>http://ooml.ml/2017/ubuntu-build-blog-hexo/</id>
+    <published>2017-09-15T08:07:36.000Z</published>
+    <updated>2017-09-17T13:10:49.124Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://ojoba1c98.bkt.clouddn.com/img/build-hexo/hexoGoverment.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;搭建此博客的动机以及好处在此就不多谈了，之前已经表达过，详情请看&lt;em&gt;&lt;a href=&quot;http://ookamiantd.top/20170110/hello-world/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Start My Blog Trip — Power By Hexo&lt;/a&gt;&lt;/em&gt;&lt;br&gt;记录一下搭建的基本过程以及遇到的一些问题，仅供参考&lt;br&gt;= =废话不多说，进入主题&lt;br&gt;
+      &lt;h1 id=&quot;一、准备的工作&quot;&gt;&lt;a href=&quot;#一、准备的工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备的工作&quot;&gt;&lt;/a&gt;一、准备的工作&lt;/h1&gt;&lt;h5 id=&quot;安装ubuntu-16-04-3-下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&quot;&gt;&lt;a href=&quot;#安装ubuntu-16-04-3-下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&quot; class=&quot;headerlink&quot; title=&quot;安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&quot;&gt;&lt;/a&gt;安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;/h5&gt;&lt;p&gt;装好后执行下面代码&lt;/p&gt;
     
     </summary>
     
-      <category term="Hexo" scheme="http://ooml.ml/categories/Hexo/"/>
+      <category term="教程" scheme="http://ooml.ml/categories/%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
