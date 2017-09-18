@@ -75,23 +75,25 @@
   </entry>
   
   <entry>
-    <title>Start My Blog Trip -- Power By Hexo</title>
+    <title>我博客 --开启原因</title>
     <link href="http://ooml.ml/2017/hello-world/"/>
     <id>http://ooml.ml/2017/hello-world/</id>
-    <published>2017-01-10T15:49:28.000Z</published>
-    <updated>2017-09-15T14:17:03.943Z</updated>
+    <published>2017-09-10T04:49:28.000Z</published>
+    <updated>2017-09-18T14:56:11.272Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+      
+      
+        &lt;p&gt;欢迎来到我的博客! 这是我的第一篇博文. 告诉你们个秘密，我原来是玩路由器的（编译固件刷机等），有时候想记一些教程分享给一些需要的人，想了很久终于决定在Github上建博客比较稳定的，几乎不会倒闭也许还能千年流传，hexo坑好多，一路艰难的走过来了，学这个用了蛮久的时间。&lt;
+      
     
     </summary>
     
-      <category term="Essay" scheme="http://ooml.ml/categories/Essay/"/>
+      <category term="Lift" scheme="http://ooml.ml/categories/Lift/"/>
     
     
-      <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
+      <category term="Blog" scheme="http://ooml.ml/tags/Blog/"/>
     
   </entry>
   

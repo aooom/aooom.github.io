@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ooml.ml/2017/hello-world/</loc>
+    
+    <lastmod>2017-09-18T14:56:11.272Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ooml.ml/2017/ubuntu-build-blog-hexo/</loc>
     
     <lastmod>2017-09-18T12:44:38.340Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://ooml.ml/2017/build-blog-hexo-advanced/</loc>
     
     <lastmod>2017-09-18T02:36:22.388Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ooml.ml/2017/hello-world/</loc>
-    
-    <lastmod>2017-09-15T14:17:03.943Z</lastmod>
     
   </url>
   
