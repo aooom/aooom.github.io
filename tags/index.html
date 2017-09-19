@@ -90,8 +90,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Aooom‘s Blog" type="application/atom+xml" />
 
@@ -362,6 +360,15 @@
 
           
   <div class="comments" id="comments">
+    
+      <link rel="stylesheet" href="/js/dist/iDisqus.min.css" />
+      <script src="/js/dist/iDisqus.min.js"></script>
+      <div id="comment">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -650,6 +657,25 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://aooom.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+            var disq = new iDisqus('comment', {
+                forum: 'aooom',
+                api: 'http://demo-dpapi.000webhostapp.com/disqus/api',
+                site: 'http://ooml.ml',
+                mode: 2,
+                timeout: 3000,
+                init: true
+            });
+      </script>
+    
+
+  
+
 
 
 
@@ -662,10 +688,6 @@
   
 
 
-
-
-
-  
 
 
 
