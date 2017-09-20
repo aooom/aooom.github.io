@@ -656,7 +656,11 @@
 
 
   
-
+    <div class="comment-toggle">
+            <input type="checkbox" id="comment-toggle" class="comment-toggle-input" disabled/>
+            <label class="comment-toggle-icon" for="comment-toggle"></label>
+            <label class="comment-toggle-button" for="comment-toggle">评论框</label>
+    </div>
     
       <script id="dsq-count-scr" src="https://aooom.disqus.com/count.js" async></script>
     
@@ -717,7 +721,7 @@
                 forum: 'aooom',
                 api: 'http://demo-dpapi.000webhostapp.com/disqus/api',
                 site: 'http://ooml.ml',
-                mode: 2,
+                mode: 3,
                 timeout: 3000,
                 init: true,
                 emoji_list: emojiList,
