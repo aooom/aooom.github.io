@@ -1116,7 +1116,17 @@
 <script type="text/javascript" src="/js/src/love.js"></script>
 <script type="text/javascript"
 color="255,0,204" opacity='0.7' zIndex="-2" count="80" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
-
-
+<script src="/js/dist/iDisqus.min.js"></script>
+<script type="text/javascript">
+   var disq = new iDisqus('comment', {
+      forum: 'aooom',
+      api: 'http://demo-dpapi.000webhostapp.com/disqus/api',
+      site: 'http://ooml.ml',
+      mode: 2,
+      timeout: 3000,
+      init: true,
+     });
+   disq.count();
+</script>
 </body>
 </html>
