@@ -1969,7 +1969,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0aff83;
+  background: #413b85;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3138,4 +3138,58 @@ body {
   color: #444;
   font-size: 16px;
   background: rgba(240,240,240,0.1);
+}
+#comment a:hover {
+  border-bottom: none;
+}
+.comment-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+}
+.comment-toggle .comment-toggle-input {
+  display: none;
+}
+.comment-toggle .comment-toggle-input:checked+.comment-toggle-icon {
+  background-color: #2aa0ff;
+}
+.comment-toggle .comment-toggle-input:checked+.comment-toggle-icon:before {
+  margin-left: 11px;
+}
+.comment-toggle .comment-toggle-input:disabled~.comment-toggle-button,
+.comment-toggle .comment-toggle-input:disabled~.comment-toggle-icon {
+  display: none;
+}
+.comment-toggle .comment-toggle-icon {
+  display: block;
+  width: 32px;
+  height: 20px;
+  background-color: #434343;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 2.5px 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.comment-toggle .comment-toggle-icon:before {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.comment-toggle .comment-toggle-button {
+  display: block;
+  color: #fff !important;
+  background-color: #434343;
+  border-radius: 2px;
+  line-height: 20px;
+  height: 20px;
+  padding: 0 3px;
+  cursor: pointer;
+  margin: 0 5px;
 }
