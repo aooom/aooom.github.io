@@ -721,11 +721,17 @@
                 forum: 'aooom',
                 api: 'http://demo-dpapi.000webhostapp.com/disqus/api',
                 site: 'http://ooml.ml',
-                mode: 3,
+                title:  page.title,
+                url: page.url,
+                mode: 2,
                 timeout: 3000,
+                slug: page.url.slice(1).split('.')[0],
                 init: true,
+                toggle: 'comment-toggle',
+                sort: 'newest',
                 emoji_list: emojiList,
-                emoji_preview: true
+                emoji_preview: true,
+                badge: '博主'
             });
             disq.count();
       </script>
