@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ooml.ml/2017/hello-world/</loc>
+    
+    <lastmod>2017-09-21T09:55:18.322Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ooml.ml/tags/index.html</loc>
     
     <lastmod>2017-09-20T14:03:35.882Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://ooml.ml/about/index.html</loc>
     
     <lastmod>2017-09-20T14:02:49.817Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ooml.ml/2017/hello-world/</loc>
-    
-    <lastmod>2017-09-19T15:15:26.105Z</lastmod>
     
   </url>
   
