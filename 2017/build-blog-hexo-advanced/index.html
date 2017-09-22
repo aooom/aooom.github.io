@@ -124,7 +124,7 @@
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/GoogleSearch.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/baidutoken.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/robots.png">
-<meta property="og:updated_time" content="2017-09-19T14:55:22.455Z">
+<meta property="og:updated_time" content="2017-09-22T03:14:33.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Hexo搭建个人博客——进阶篇(从入门到入土)">
 <meta name="twitter:description" content="前言好久没更新了，因为懒- -前面介绍了Hexo的一些基本搭建→最新ubuntu-16.04.3搭建hexo发布博客对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。关于NexT主题的很多配置、插件都可以在官方文档找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。">
@@ -446,7 +446,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  7,302
+                  7,334
                 </span>
               
 
@@ -516,7 +516,7 @@
 <li><code>zIndex</code>: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</li>
 </ul>
 <p>eg :</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="attribute">type</span>=<span class="string">"text/javascript"</span> <span class="attribute">color</span>=<span class="string">"255,132,0"</span> <span class="attribute">opacity</span>=<span class="string">'0.6'</span> <span class="attribute">zIndex</span>=<span class="string">"-2"</span> <span class="attribute">count</span>=<span class="string">"99"</span> <span class="attribute">src</span>=<span class="string">"//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="attribute">type</span>=<span class="string">"text/javascript"</span> <span class="attribute">color</span>=<span class="string">"255,132,0"</span> <span class="attribute">opacity</span>=<span class="string">'0.6'</span> <span class="attribute">zIndex</span>=<span class="string">"-2"</span> <span class="attribute">count</span>=<span class="string">"99"</span> <span class="attribute">src</span>=<span class="string">"//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"</span>&gt;&lt;/script&gt;</div><div class="line"><span class="comment">#粉色</span></div><div class="line">&lt;script <span class="attribute">type</span>=<span class="string">"text/javascript"</span></div><div class="line"><span class="attribute">color</span>=<span class="string">"255,0,204"</span> <span class="attribute">opacity</span>=<span class="string">'0.7'</span> <span class="attribute">zIndex</span>=<span class="string">"-2"</span> <span class="attribute">count</span>=<span class="string">"80"</span> <span class="attribute">src</span>=<span class="string">"//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>不足: CPU占用过高</p>
 <h3 id="如何添加"><a href="#如何添加" class="headerlink" title="如何添加?"></a>如何添加?</h3><h4 id="修改代码"><a href="#修改代码" class="headerlink" title="修改代码"></a>修改代码</h4><p>打开<code>next/layout/_layout.swig</code>，在<code>&lt;/body&gt;</code>之前添加如下代码：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.canvas_nest %&#125;</span><span class="xml"></span></div><div class="line"><span class="xml"></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"><span class="xml"></span></div><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></div></pre></td></tr></table></figure></p>
 <h4 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h4><p>打开<code>/next/_config.yml</code>，添加以下代码：<br><figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># --------------------------------------------------------------</span></div><div class="line"><span class="meta"># background settings</span></div><div class="line"><span class="meta"># --------------------------------------------------------------</span></div><div class="line"><span class="meta"># add canvas-nest effect</span></div><div class="line"><span class="meta"># see detail from https://github.com/hustcc/canvas-nest.js</span></div><div class="line">canvas_nest: <span class="literal">true</span></div></pre></td></tr></table></figure></p>
@@ -1012,7 +1012,7 @@ var jiathis_config={
       <span class="post-meta-item-text">全站总字数&#58;</span>
     
     <span title="全站总字数">
-      9.9k
+      10.0k
     </span>
   
 </div>
@@ -1085,6 +1085,8 @@ var jiathis_config={
   
 
 
+  
+
 
 
 
@@ -1112,6 +1114,9 @@ var jiathis_config={
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -1578,8 +1583,6 @@ var jiathis_config={
 
 
 <script type="text/javascript" src="/js/src/love.js"></script>
-<script type="text/javascript"
-color="255,0,204" opacity='0.7' zIndex="-2" count="80" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 <script src="/js/dist/iDisqus.min.js"></script>
 <script type="text/javascript">
    var disq = new iDisqus('comment', {

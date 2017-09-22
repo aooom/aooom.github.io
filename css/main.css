@@ -1969,7 +1969,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf9462;
+  background: #63cbf6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3137,7 +3137,7 @@ blockquote {
 body {
   color: #444;
   font-size: 16px;
-  background: rgba(240,240,240,0.1);
+  background: rgba(4,177,59,0.1);
 }
 #comment a:hover {
   border-bottom: none;
