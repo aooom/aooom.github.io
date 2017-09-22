@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ooml.ml/"/>
-  <updated>2017-09-22T03:14:33.009Z</updated>
+  <updated>2017-09-22T12:56:07.563Z</updated>
   <id>http://ooml.ml/</id>
   
   <author>
@@ -17,16 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基于Hexo搭建个人博客——进阶篇(从入门到入土)</title>
+    <title>Hexo搭建博客——中学篇</title>
+    <link href="http://ooml.ml/2017/build-blog-hexo-advanced2/"/>
+    <id>http://ooml.ml/2017/build-blog-hexo-advanced2/</id>
+    <published>2017-09-22T13:07:34.000Z</published>
+    <updated>2017-09-22T12:56:07.563Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;实现点击出现桃心效果&quot;&gt;&lt;a href=&quot;#实现点击出现桃心效果&quot; class=&quot;headerlink&quot; title=&quot;实现点击出现桃心效果&quot;&gt;&lt;/a&gt;实现点击出现桃心效果&lt;/h1&gt;&lt;p&gt;在浏览器输入如下&lt;br&gt;&lt;code&gt;http://ooml.ml/js/src/love.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后将里面的代码copy一下，新建love.js文件并且将代码复制进去，然后保存。将love.js文件放到路径/themes/next/source/js/src里面，然后打开\themes\next\layout_layout.swig文件,在末尾（在前面引用会出现找不到的bug）添加以下代码：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://ooml.ml/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://ooml.ml/tags/Hexo/"/>
+    
+      <category term="themes" scheme="http://ooml.ml/tags/themes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建博客——小学篇</title>
     <link href="http://ooml.ml/2017/build-blog-hexo-advanced/"/>
     <id>http://ooml.ml/2017/build-blog-hexo-advanced/</id>
     <published>2017-09-16T15:07:34.000Z</published>
-    <updated>2017-09-22T03:14:33.009Z</updated>
+    <updated>2017-09-22T12:56:07.563Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://ojoba1c98.bkt.clouddn.com/img/build-hexo/next.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没更新了，因为懒- -&lt;br&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ooml.ml/2017/ubuntu-build-blog-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最新ubuntu-16.04.3搭建hexo发布博客&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;对于追求装X的博主来说，基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;theme-next.iissnan.com/getting-started.html&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;前面介绍了Hexo的一些基本搭建→&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://www.ooml.ml/2017/ubuntu-build-blog-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最新ubuntu-16.04.3搭建hexo发布博客&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;基本的搭建是满足不了的，接下来整理了一下各方面的细节优化，包括页面字体大小、配色、背景、SEO(搜索引擎优化)、域名绑定、DNS域名解析实现负载均衡等。&lt;br&gt;关于&lt;code&gt;NexT&lt;/code&gt;主题的很多配置、插件都可以在 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://theme-next.iissnan.com/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; 找到答案，那么博主只是整理了一些官方没怎么提及的细节优化。&lt;/p&gt;
     
     </summary>
     
@@ -50,12 +73,11 @@
     <link href="http://ooml.ml/2017/ubuntu-build-blog-hexo/"/>
     <id>http://ooml.ml/2017/ubuntu-build-blog-hexo/</id>
     <published>2017-09-15T08:07:36.000Z</published>
-    <updated>2017-09-19T15:15:26.105Z</updated>
+    <updated>2017-09-22T12:56:07.563Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一、准备的工作&quot;&gt;&lt;a href=&quot;#一、准备的工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备的工作&quot;&gt;&lt;/a&gt;一、准备的工作&lt;/h1&gt;&lt;p&gt; 安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;/p&gt;
-&lt;p&gt;装好后执行下面代码&lt;/p&gt;
+      &lt;h1 id=&quot;准备的工作&quot;&gt;&lt;a href=&quot;#准备的工作&quot; class=&quot;headerlink&quot; title=&quot;准备的工作&quot;&gt;&lt;/a&gt;准备的工作&lt;/h1&gt;&lt;p&gt; 安装ubuntu-16.04.3 &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。&lt;br&gt;装好后执行下面代码&lt;br&gt;
     
     </summary>
     
@@ -79,7 +101,7 @@
     <link href="http://ooml.ml/2017/hello-world/"/>
     <id>http://ooml.ml/2017/hello-world/</id>
     <published>2017-09-10T04:49:28.000Z</published>
-    <updated>2017-09-22T02:29:24.685Z</updated>
+    <updated>2017-09-22T12:56:07.563Z</updated>
     
     <summary type="html">
     

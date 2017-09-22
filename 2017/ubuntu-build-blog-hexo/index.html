@@ -103,21 +103,21 @@
 
 
 
-<meta name="description" content="一、准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。 装好后执行下面代码">
+<meta name="description" content="准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。装好后执行下面代码">
 <meta name="keywords" content="Hexo,Node.js,Github,Coding,Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最新ubuntu-16.04.3搭建hexo发布博客">
 <meta property="og:url" content="http://ooml.ml/2017/ubuntu-build-blog-hexo/index.html">
 <meta property="og:site_name" content="Aooom‘s Blog">
-<meta property="og:description" content="一、准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。 装好后执行下面代码">
+<meta property="og:description" content="准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。装好后执行下面代码">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/version.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/uploadImg.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/copyUrl.png">
-<meta property="og:updated_time" content="2017-09-19T15:15:26.105Z">
+<meta property="og:updated_time" content="2017-09-22T12:56:07.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最新ubuntu-16.04.3搭建hexo发布博客">
-<meta name="twitter:description" content="一、准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。 装好后执行下面代码">
+<meta name="twitter:description" content="准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。装好后执行下面代码">
 <meta name="twitter:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/version.png">
 
 
@@ -420,7 +420,7 @@
 
           
             <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-thermometer-half"></i><span class="post-meta-item-text">热度</span>
+            <span class="page-pv"><i class="fa fa-thermometer-half">热度</i>
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>°C
             </span>
           
@@ -436,7 +436,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,431
+                  2,340
                 </span>
               
 
@@ -473,10 +473,7 @@
       
 
       
-        <h1 id="一、准备的工作"><a href="#一、准备的工作" class="headerlink" title="一、准备的工作"></a>一、准备的工作</h1><p> 安装ubuntu-16.04.3 <strong><em><a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso" target="_blank" rel="external">下载</a></em></strong>。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。</p>
-<p>装好后执行下面代码</p>
-<a id="more"></a>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="builtin-name">get</span> update</div><div class="line">sudo apt-<span class="builtin-name">get</span> upgrade</div></pre></td></tr></table></figure>
+        <h1 id="准备的工作"><a href="#准备的工作" class="headerlink" title="准备的工作"></a>准备的工作</h1><p> 安装ubuntu-16.04.3 <strong><em><a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso" target="_blank" rel="external">下载</a></em></strong>。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。<br>装好后执行下面代码<br><a id="more"></a><br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="builtin-name">get</span> update</div><div class="line">sudo apt-<span class="builtin-name">get</span> upgrade</div></pre></td></tr></table></figure></p>
 <h1 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt <span class="keyword">install</span> nodejs-legacy</div><div class="line">sudo apt <span class="keyword">install</span> npm</div></pre></td></tr></table></figure>
 <p>查看 node npm 版本看是否装好<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">node</span> <span class="title">-v</span></div><div class="line">npm -v</div></pre></td></tr></table></figure></p>
 <p>NPM更换淘宝源：<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo <span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</div></pre></td></tr></table></figure></p>
@@ -497,9 +494,9 @@
 <p>执行以下命令，检测是否已经装好node.js<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">node</span> <span class="title">-v</span></div></pre></td></tr></table></figure></p>
 <p>npm安装，一条命令即可解决<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl <span class="string">http:</span><span class="comment">//npmjs.org/install.sh | sudo sh</span></div></pre></td></tr></table></figure></p>
 <p><img src="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/version.png" alt=""></p>
-<p>博主安装Node.js遇到的问题就是多次安装了不同版本的Node.js，有的是安装在用户变量上，有的是系统变量，所以每次用的时候都要切换到root用户，就算赋权 <code>sudo chmod 777 file</code> 都没有用，所以折腾了很久才把Node.js完全卸载，再重新安装</p>
 <h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><h2 id="查看-git-版本"><a href="#查看-git-版本" class="headerlink" title="查看 git 版本"></a>查看 git 版本</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="comment">--version</span></div><div class="line">sudo apt-<span class="keyword">get</span> install git</div></pre></td></tr></table></figure>
 <p><strong>windows</strong> 下就直接到<em><a href="https://git-scm.com/download/win" target="_blank" rel="external">Git官网</a></em> 下载安装即可</p>
+<h2 id="注册Github帐号"><a href="#注册Github帐号" class="headerlink" title="注册Github帐号"></a>注册Github帐号</h2><p>注册就不说了，自己百度，就是创建 <code>New repository</code> 的时候名称必须和你用户名一样。然后才能有 <strong>{user_name}.github.io</strong></p>
 <h2 id="生成SSH-Key"><a href="#生成SSH-Key" class="headerlink" title="生成SSH Key"></a>生成SSH Key</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git<span class="built_in"> config </span>--global user.name youname</div><div class="line">git<span class="built_in"> config </span>--global user.email youmail@gmail.com</div><div class="line">ssh-keygen -t rsa -C youmail@gmail.com</div></pre></td></tr></table></figure>
 <p>按3个回车，密码为空。<br>在home目录下（桌面界面），按Ctrl+H可以看到隐藏的.ssh，进入，id_rsa.pub文件就是我们需要的公钥。<br>添加SSH Key<br>登录Github，右上角 头像 -&gt; <code>Settings</code> —&gt; <code>SSH nd GPG keys</code> —&gt; <code>New SSH key</code> 。把公钥粘贴到key中，填好title并点击 Add SSH key<br>看是否连接地上<br><code>ssh -T git@github.com</code><br>第一次的会提示是否continue，输入<code>yes</code>就会看到：You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github!</p>
 <h1 id="二、-安装hexo"><a href="#二、-安装hexo" class="headerlink" title="二、 安装hexo"></a>二、 安装hexo</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo npm <span class="keyword">cache</span> clean</div><div class="line">sudo cnpm <span class="keyword">install</span> hexo-cli -g</div><div class="line">sudo cnpm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure>
@@ -543,7 +540,6 @@
 <p>然后再博文中通过相对路径引用<br><figure class="highlight django"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">asset_img</span> 图片文件名 %&#125;</span><span class="xml"></span></div></pre></td></tr></table></figure></p>
 <h3 id="方式三"><a href="#方式三" class="headerlink" title="方式三"></a>方式三</h3><p>使用<em><a href="http://www.qiniu.com/" target="_blank" rel="external">七牛云储存</a></em> ，因为Github跟Coding项目容量有限，而且Github的主机在国外，访问速度较慢，把图片放在国内的图床上是个更好的选择，免费用户实名审核之后，新建空间，专门用来放置博客上引用的资源，进入空间后点击「内容管理」，再点击「上传」<br><img src="http://ojoba1c98.bkt.clouddn.com/uploadImg.png" alt=""></p>
 <p>上传完成之后点击关闭回到管理页面，选中刚上传的图片，最右边的操作点击复制链接即可<br><img src="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/copyUrl.png" alt=""><br>然后在博文中通过地址引用<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!<span class="selector-attr">[]</span>(图片地址如：<span class="attribute">http</span>:<span class="comment">//ojoba1c98.bkt.clouddn.com/img/build-hexo/copyUrl.png)</span></div></pre></td></tr></table></figure></p>
-<h3 id="注册Github帐号"><a href="#注册Github帐号" class="headerlink" title="注册Github帐号"></a>注册Github帐号</h3><p>注册就不说了，自己百度，就是创建 <code>New repository</code> 的时候名称必须和你用户名一样。然后才能有 <strong>{user_name}.github.io</strong></p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><blockquote>
 <p><strong><em><a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">使用Hexo搭建个人博客(基于hexo3.0) </a></em></strong><br><strong><em><a href="http://codepub.cn/2015/04/06/Github-Pages-personal-blog-from-Octopress-to-Hexo/#" target="_blank" rel="external">Github Pages个人博客，从Octopress转向Hexo</a></em></strong><br><strong><em><a href="http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/" target="_blank" rel="external">Hexo 3.1.1 静态博客搭建指南</a></em></strong><br><strong><em><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo官方文档</a></em></strong><br><strong><em><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NexT官方文档</a></em></strong><br><strong><em><a href="http://blog.csdn.net/v123411739/article/details/44071059/" target="_blank" rel="external">史上最全github使用方法：github入门到精通</a></em></strong></p>
 </blockquote>
@@ -650,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/build-blog-hexo-advanced/" rel="prev" title="基于Hexo搭建个人博客——进阶篇(从入门到入土)">
-                基于Hexo搭建个人博客——进阶篇(从入门到入土) <i class="fa fa-chevron-right"></i>
+              <a href="/2017/build-blog-hexo-advanced/" rel="prev" title="Hexo搭建博客——小学篇">
+                Hexo搭建博客——小学篇 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -767,7 +763,7 @@ var jiathis_config={
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -778,7 +774,7 @@ var jiathis_config={
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -789,7 +785,7 @@ var jiathis_config={
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -863,7 +859,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、准备的工作"><span class="nav-number">1.</span> <span class="nav-text">一、准备的工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：二进制包直接解压配置"><span class="nav-number">2.1.</span> <span class="nav-text">方法一：二进制包直接解压配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：换源下载"><span class="nav-number">2.2.</span> <span class="nav-text">方法二：换源下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三：源文件编译安装"><span class="nav-number">2.3.</span> <span class="nav-text">方法三：源文件编译安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装git"><span class="nav-number">3.</span> <span class="nav-text">安装git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看-git-版本"><span class="nav-number">3.1.</span> <span class="nav-text">查看 git 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成SSH-Key"><span class="nav-number">3.2.</span> <span class="nav-text">生成SSH Key</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、-安装hexo"><span class="nav-number">4.</span> <span class="nav-text">二、 安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化博客文件夹"><span class="nav-number">4.1.</span> <span class="nav-text">初始化博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#切换到该路径"><span class="nav-number">4.2.</span> <span class="nav-text">切换到该路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo的扩展插件如下"><span class="nav-number">4.3.</span> <span class="nav-text">安装hexo的扩展插件如下</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#换主题"><span class="nav-number">4.3.1.</span> <span class="nav-text">换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成html先不要修改-config-yml"><span class="nav-number">4.3.2.</span> <span class="nav-text">生成html先不要修改_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">4.3.3.</span> <span class="nav-text">启动本地服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#这一步之后就可以通过http-localhost-4000-查看了"><span class="nav-number">4.3.4.</span> <span class="nav-text">这一步之后就可以通过http://localhost:4000  查看了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">4.3.5.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更换主题外观"><span class="nav-number">4.3.6.</span> <span class="nav-text">更换主题外观</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将hexo博客部署到github上"><span class="nav-number">5.</span> <span class="nav-text">将hexo博客部署到github上</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Deployment-注释"><span class="nav-number">5.1.</span> <span class="nav-text">Deployment 注释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docs-https-hexo-io-docs-deployment-html"><span class="nav-number">5.1.1.</span> <span class="nav-text">Docs: https://hexo.io/docs/deployment.html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除缓存文件-db-json-和已生成的静态文件-public"><span class="nav-number">5.1.2.</span> <span class="nav-text">清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态页面"><span class="nav-number">5.1.3.</span> <span class="nav-text">生成静态页面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">5.2.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成并发布："><span class="nav-number">5.2.1.</span> <span class="nav-text">生成并发布：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建页面："><span class="nav-number">5.2.2.</span> <span class="nav-text">创建页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo组合命令"><span class="nav-number">5.2.3.</span> <span class="nav-text">hexo组合命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章与页面"><span class="nav-number">5.3.</span> <span class="nav-text">新建文章与页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文章"><span class="nav-number">5.4.</span> <span class="nav-text">编辑文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入图片"><span class="nav-number">5.5.</span> <span class="nav-text">插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方式一"><span class="nav-number">5.5.1.</span> <span class="nav-text">方式一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式二"><span class="nav-number">5.5.2.</span> <span class="nav-text">方式二</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式三"><span class="nav-number">5.5.3.</span> <span class="nav-text">方式三</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册Github帐号"><span class="nav-number">5.5.4.</span> <span class="nav-text">注册Github帐号</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备的工作"><span class="nav-number">1.</span> <span class="nav-text">准备的工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：二进制包直接解压配置"><span class="nav-number">2.1.</span> <span class="nav-text">方法一：二进制包直接解压配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：换源下载"><span class="nav-number">2.2.</span> <span class="nav-text">方法二：换源下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三：源文件编译安装"><span class="nav-number">2.3.</span> <span class="nav-text">方法三：源文件编译安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装git"><span class="nav-number">3.</span> <span class="nav-text">安装git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看-git-版本"><span class="nav-number">3.1.</span> <span class="nav-text">查看 git 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册Github帐号"><span class="nav-number">3.2.</span> <span class="nav-text">注册Github帐号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成SSH-Key"><span class="nav-number">3.3.</span> <span class="nav-text">生成SSH Key</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、-安装hexo"><span class="nav-number">4.</span> <span class="nav-text">二、 安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化博客文件夹"><span class="nav-number">4.1.</span> <span class="nav-text">初始化博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#切换到该路径"><span class="nav-number">4.2.</span> <span class="nav-text">切换到该路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo的扩展插件如下"><span class="nav-number">4.3.</span> <span class="nav-text">安装hexo的扩展插件如下</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#换主题"><span class="nav-number">4.3.1.</span> <span class="nav-text">换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成html先不要修改-config-yml"><span class="nav-number">4.3.2.</span> <span class="nav-text">生成html先不要修改_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">4.3.3.</span> <span class="nav-text">启动本地服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#这一步之后就可以通过http-localhost-4000-查看了"><span class="nav-number">4.3.4.</span> <span class="nav-text">这一步之后就可以通过http://localhost:4000  查看了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">4.3.5.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更换主题外观"><span class="nav-number">4.3.6.</span> <span class="nav-text">更换主题外观</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将hexo博客部署到github上"><span class="nav-number">5.</span> <span class="nav-text">将hexo博客部署到github上</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Deployment-注释"><span class="nav-number">5.1.</span> <span class="nav-text">Deployment 注释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docs-https-hexo-io-docs-deployment-html"><span class="nav-number">5.1.1.</span> <span class="nav-text">Docs: https://hexo.io/docs/deployment.html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除缓存文件-db-json-和已生成的静态文件-public"><span class="nav-number">5.1.2.</span> <span class="nav-text">清除缓存文件 (db.json) 和已生成的静态文件 (public)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态页面"><span class="nav-number">5.1.3.</span> <span class="nav-text">生成静态页面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">5.2.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成并发布："><span class="nav-number">5.2.1.</span> <span class="nav-text">生成并发布：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建页面："><span class="nav-number">5.2.2.</span> <span class="nav-text">创建页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo组合命令"><span class="nav-number">5.2.3.</span> <span class="nav-text">hexo组合命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章与页面"><span class="nav-number">5.3.</span> <span class="nav-text">新建文章与页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文章"><span class="nav-number">5.4.</span> <span class="nav-text">编辑文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入图片"><span class="nav-number">5.5.</span> <span class="nav-text">插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方式一"><span class="nav-number">5.5.1.</span> <span class="nav-text">方式一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式二"><span class="nav-number">5.5.2.</span> <span class="nav-text">方式二</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式三"><span class="nav-number">5.5.3.</span> <span class="nav-text">方式三</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
@@ -901,7 +897,7 @@ var jiathis_config={
       <span class="post-meta-item-text">全站总字数&#58;</span>
     
     <span title="全站总字数">
-      10.0k
+      10.5k
     </span>
   
 </div>
@@ -920,7 +916,7 @@ var jiathis_config={
 
   
     <span class="site-uv">
-      <i class="fa fa-user"></i><span class="post-meta-item-text">总访客数</span>
+      <i class="fa fa-user">总访客数</i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
       人
     </span>
@@ -928,7 +924,7 @@ var jiathis_config={
 
   
     <span class="site-pv">
-      <i class="fa fa-eye"></i><span class="post-meta-item-text">总访问量</span>
+      <i class="fa fa-eye">总访问量</i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
       次
     </span>
