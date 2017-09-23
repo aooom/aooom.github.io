@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ooml.ml/2017/hello-world/</loc>
+    <loc>http://ooml.ml/2017/build-blog-hexo-advanced/</loc>
     
-    <lastmod>2017-09-23T06:34:01.195Z</lastmod>
+    <lastmod>2017-09-23T14:32:00.410Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://ooml.ml/2017/build-blog-hexo-advanced2/</loc>
     
-    <lastmod>2017-09-23T06:34:01.195Z</lastmod>
+    <lastmod>2017-09-23T14:32:00.410Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://ooml.ml/2017/ubuntu-build-blog-hexo/</loc>
     
-    <lastmod>2017-09-22T12:56:07.563Z</lastmod>
+    <lastmod>2017-09-23T14:32:00.410Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ooml.ml/2017/build-blog-hexo-advanced/</loc>
+    <loc>http://ooml.ml/about/index.html</loc>
     
-    <lastmod>2017-09-22T12:56:07.563Z</lastmod>
+    <lastmod>2017-09-23T14:29:07.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ooml.ml/2017/hello-world/</loc>
+    
+    <lastmod>2017-09-23T11:34:30.301Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://ooml.ml/categories/index.html</loc>
     
     <lastmod>2017-09-20T14:03:22.551Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ooml.ml/about/index.html</loc>
-    
-    <lastmod>2017-09-20T14:02:49.817Z</lastmod>
     
   </url>
   

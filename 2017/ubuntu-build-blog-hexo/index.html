@@ -114,7 +114,7 @@
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/version.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/uploadImg.png">
 <meta property="og:image" content="http://ojoba1c98.bkt.clouddn.com/img/build-hexo/copyUrl.png">
-<meta property="og:updated_time" content="2017-09-22T12:56:07.563Z">
+<meta property="og:updated_time" content="2017-09-23T14:32:00.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最新ubuntu-16.04.3搭建hexo发布博客">
 <meta name="twitter:description" content="准备的工作 安装ubuntu-16.04.3 下载。在虚拟机或者电脑上装都可以，一路下一步这个没啥难度。装好后执行下面代码">
@@ -386,8 +386,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/教程/" itemprop="url" rel="index">
-                    <span itemprop="name">教程</span>
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
                   </a>
                 </span>
 
@@ -436,7 +436,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,340
+                  2,341
                 </span>
               
 
@@ -481,10 +481,10 @@
 <p>更改NodeJs环境变量：<br><code>sudo gedit /etc/profile</code><br>在打开的文件最下面添加如下：<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export NODE_HOME=<span class="regexp">/usr/local</span><span class="regexp">/n/versions</span><span class="regexp">/node/</span><span class="number">8.2</span>.<span class="number">1</span></div><div class="line">export PATH=$<span class="symbol">PATH:</span>$NODE_HOME/bin</div><div class="line">export NODE_PATH=$NODE_HOME/<span class="class"><span class="keyword">lib</span>/<span class="title">node_modules</span></span></div></pre></td></tr></table></figure></p>
 <p>保存退出，在终端输入：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">source /etc/profile</div><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure></p>
 <blockquote>
-<p>Node.js的安装有很多种方式，如果我的方法不行请参考<em><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo的官方文档</a></em> 建议是用<em><a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></em> 安装，但好多人都说不行，所以找了另外两种方式安装<br><strong>windows</strong>的童鞋可参考<em><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">安装Node.js</a></em></p>
+<p>Node.js的安装有很多种方式，如果我的方法不行请参考 <em><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo的官方文档</a></em> 建议是用 <em><a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></em> 安装，但好多人都说不行，所以找了另外两种方式安装<br><strong>windows</strong> 的童鞋可参考 <em><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">安装Node.js</a></em></p>
 </blockquote>
-<h2 id="方法一：二进制包直接解压配置"><a href="#方法一：二进制包直接解压配置" class="headerlink" title="方法一：二进制包直接解压配置"></a>方法一：二进制包直接解压配置</h2><p>在node.js的<em><a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a></em> 下载二进制包来安装的，下载过后，解压，设置软链接，要不然每次都执行命令都要加上路径，好麻烦<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /home/ybd/Data/soft/application/node-v6.2.0-linux-x64/bin/node /usr/local/bin/node</div><div class="line"></div><div class="line">sudo ln -s /home/ybd/Data/soft/application/node-v6.2.0-linux-x64/bin/npm /usr/local/bin/npm</div></pre></td></tr></table></figure></p>
-<p><strong>注意</strong>！源文件要写<strong><font color="red">绝对路径</font></strong>，否则会报错：<strong>链接层数过多</strong>。也可以直接将node可执行文件拷贝到 <code>/usr/local/bin</code> 目录下。</p>
+<h2 id="方法一：二进制包直接解压配置"><a href="#方法一：二进制包直接解压配置" class="headerlink" title="方法一：二进制包直接解压配置"></a>方法一：二进制包直接解压配置</h2><p>在node.js的 <em><a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a></em> 下载二进制包来安装的，下载过后，解压，设置软链接，要不然每次都执行命令都要加上路径，好麻烦<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /home/ybd/Data/soft/application/node-v6.2.0-linux-x64/bin/node /usr/local/bin/node</div><div class="line"></div><div class="line">sudo ln -s /home/ybd/Data/soft/application/node-v6.2.0-linux-x64/bin/npm /usr/local/bin/npm</div></pre></td></tr></table></figure></p>
+<p><strong>注意</strong> ！源文件要写 <strong><font color="red">绝对路径</font></strong>，否则会报错：<strong>链接层数过多</strong>。也可以直接将node可执行文件拷贝到 <code>/usr/local/bin</code> 目录下。</p>
 <p>接下来就可以查看是否成功配置了<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">node</span> <span class="title">-v</span></div><div class="line">npm -v</div></pre></td></tr></table></figure></p>
 <h2 id="方法二：换源下载"><a href="#方法二：换源下载" class="headerlink" title="方法二：换源下载"></a>方法二：换源下载</h2><p>安装 6.x 版本：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">curl -sL http<span class="variable">s:</span>//<span class="keyword">deb</span>.nodesource.<span class="keyword">com</span>/setup_6.<span class="keyword">x</span> | sudo -E bash -</div><div class="line">sudo apt-<span class="built_in">get</span> install -<span class="keyword">y</span> nodejs</div></pre></td></tr></table></figure></p>
 <p>安装 8.x 版本：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">curl -sL http<span class="variable">s:</span>//<span class="keyword">deb</span>.nodesource.<span class="keyword">com</span>/setup_8.<span class="keyword">x</span> | sudo -E bash -</div><div class="line">sudo apt-<span class="built_in">get</span> install -<span class="keyword">y</span> nodejs</div></pre></td></tr></table></figure></p>
@@ -774,7 +774,7 @@ var jiathis_config={
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -838,6 +838,10 @@ var jiathis_config={
               
                 <li class="links-of-blogroll-item">
                   <a href="https://ycwalker.com/" title="ciqulover" target="_blank">ciqulover</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://masteranthoneyd.github.io/" title="ookamiAntd" target="_blank">ookamiAntd</a>
                 </li>
               
             </ul>
